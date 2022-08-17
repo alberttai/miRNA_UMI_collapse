@@ -79,6 +79,8 @@ while (<IN>){
 
 	if ( length ($umiplus) > 12){
 		$umi = substr ($umiplus, 0, 12);
+	} else {
+		$umi = $umiplus
 	}
 
 	if ( length ($umiplus) >= 12 && $line[1] != -1 && $umi !~ m/N/ && $read !~ m/N/ ){
